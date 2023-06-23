@@ -12,7 +12,7 @@ TI.22.A2
 
 ### ERD
 
-![image](SS/ss6.png)
+![image](ss/ss6.png)
 
 
 ![image](ss/ss7.png)
