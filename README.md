@@ -39,8 +39,9 @@ TI.22.A2
 
 Berikut adalah contoh query SQL NYA:
 
-```sql
+
 -- Tampilkan data karyawan yang bekerja pada departemen yang sama dengan karyawan yang bernama Dika
+```sql
 SELECT k1.*
 FROM karyawan k1
 JOIN karyawan k2 ON k1.id_dept = k2.id_dept
@@ -52,8 +53,9 @@ output :
 
 ![image](ss/ss1.png)
 
-```sql
+
 -- Tampilkan data karyawan yang gajinya lebih besar dari rata-rata gaji semua karyawan. Urutkan menurun berdasarkan besaran gaji.
+```sql
 SELECT *
 FROM karyawan
 WHERE gaji_pokok > (SELECT AVG(gaji_pokok) FROM karyawan)
@@ -66,8 +68,9 @@ output :
 ![image](ss/ss2.png)
 
 
-```sql
+
 -- Tampilkan nik dan nama karyawan untuk semua karyawan yang bekerja di departemen yang sama dengan karyawan dengan nama yang mengandung huruf 'K'.
+```sql
 SELECT k.nik, k.nama
 FROM karyawan k
 JOIN departemen d ON k.id_dept = d.id_dept
@@ -84,8 +87,9 @@ output :
 ![image](ss/ss3.png)
 
 
-```sql
+
 -- Tampilkan data karyawan yang bekerja pada departemen yang ada di kantor pusat.
+```sql
 SELECT k.*
 FROM karyawan k
 JOIN departemen d ON k.id_dept = d.id_dept
@@ -98,8 +102,9 @@ output :
 ![image](ss/ss4.png)
 
 
-```sql
+
 -- Tampilkan nik dan nama karyawan untuk semua karyawan yang bekerja di departemen yang sama dengan karyawan dengan nama yang mengandung huruf 'K' dan gajinya lebih besar dari rata-rata gaji semua karyawan.
+```sql
 SELECT k.nik, k.nama
 FROM karyawan k
 JOIN departemen d ON k.id_dept = d.id_dept
